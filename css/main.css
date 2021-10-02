@@ -305,6 +305,24 @@ textarea {
   margin-right: 5vh;
 }
 
+.contentcss {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 64vh;
+  align-items: center;
+}
+
+.contentcss .explicacion {
+  margin-left: 5vh;
+  margin-right: 5vh;
+  padding-bottom: 10vh;
+}
+
+.contentcss .demo {
+  padding-left: 5vh;
+  padding-bottom: 10vh;
+}
+
 .footer {
   background-color: black;
   height: 10vh;
