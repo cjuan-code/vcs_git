@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a char=("á" "à" "ä" "â" "é" "è" "ë" "ê" "í" "ì" "ï" "î" "ó" "ò" "ö" "ô" "ú" "ù" "ü" "û")
+
+ficheros=`ls`
+
+for fitch in ${ficheros}; do
+        	
+		for letra in ${char[@]}; do
+		
+			contenido=`cat ${fitch} | grep ${letra}`
+
+			if ! [ "${contenido}" == "" ]; then
+				echo "Hay un caracter no valido ( $letra ) en ${fitch}"
+				exit 1
+			fi
+		done
+done
