@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Se va a proceder a actualizar las dependencias el proyecto"
+npm install
