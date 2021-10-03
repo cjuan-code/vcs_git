@@ -2,7 +2,7 @@
 
 declare -a char=("á" "à" "ä" "â" "é" "è" "ë" "ê" "í" "ì" "ï" "î" "ó" "ò" "ö" "ô" "ú" "ù" "ü" "û")
 
-ficheros=`ls`
+ficheros=`ls *.txt *.html`
 
 for fitch in ${ficheros}; do
         	
