@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+eslint=`eslint --plugin html --ext .html .`
+
+eslint --plugin html --ext .html .
+
+if ! [ "${eslint}" == "" ]; then
+
+	echo "Ha ocurrido un error, solucionalo y vuelve a hacer el commit"
+	exit 1
+fi
