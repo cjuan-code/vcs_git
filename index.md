@@ -65,7 +65,45 @@ La feature de atributosHTML se ve de la siguiente manera:
 
 ![9](https://user-images.githubusercontent.com/79716922/135763787-7f86312b-3163-4cb7-802b-678629ff23a9.png)
 
+Una vez realizada la feature realizará otro commit.
 
+![10](https://user-images.githubusercontent.com/79716922/135763788-7e4d58ac-12b7-4eaa-af29-8c9c3d566e3e.png)
 
+Una vez finalizadas las features, realizará los push de las ramas al repositorio.
+
+![11](https://user-images.githubusercontent.com/79716922/135763789-8eca5be4-66c9-47ec-a74e-e74ac7f906de.png)
+![12](https://user-images.githubusercontent.com/79716922/135763791-195f03c8-b15d-4e5f-81ca-0c1c248c9c87.png)
+
+### Usuario 3
+
+El usuario3 se ocupará de realizar la feature de estilosCSS creando una rama nueva.
+
+![13](https://user-images.githubusercontent.com/79716922/135763792-b93cdc0a-d8f7-4986-945e-4b28e589f8f2.png)
+
+La feature se ve así:
+
+![14](https://user-images.githubusercontent.com/79716922/135763793-f648fb70-a683-42f4-876a-757da81c327f.png)
+
+Una vez hecha, realizará el commit y el push al repositorio.
+
+![15](https://user-images.githubusercontent.com/79716922/135763795-f7e7a31f-53c2-463d-8a27-4f2d9702e115.png)
+
+### Usuario 1
+
+Ahora que ya están todas las features realizadas, el usuario1 se actualizara haciendo un git pull.
+
+![16](https://user-images.githubusercontent.com/79716922/135763796-288f95f0-4531-4535-8770-342bb0dbe095.png)
+
+También se encargará de mergear las features a la rama master. En la siguiente captura, se puede ver que ha habido un error al hacer el git merge, por tanto, el usuario1 lo resolverá manualmente.
+
+![17](https://user-images.githubusercontent.com/79716922/135763798-f7ca66ba-8819-44b6-a434-2e57a82ad681.png)
+
+Una vez resuelto el conflicto, realizará un commit de los merge de las features contenidoHTML y atributosHTML realizadas por el usuario2.
+
+![18](https://user-images.githubusercontent.com/79716922/135763800-39c8f2d8-6535-4e04-a10b-b5e3ba3231c8.png)
+
+Ahora mergeará la rama estilosCSS, como podemos ver, también conflicto, por lo que el usuario1 lo resolverá manualmente de nuevo.
+
+![19](https://user-images.githubusercontent.com/79716922/135763801-dd054b0e-eb05-4ed9-a584-097062c1df1e.png)
 
 
