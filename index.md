@@ -102,8 +102,54 @@ Una vez resuelto el conflicto, realizará un commit de los merge de las features
 
 ![18](https://user-images.githubusercontent.com/79716922/135763800-39c8f2d8-6535-4e04-a10b-b5e3ba3231c8.png)
 
-Ahora mergeará la rama estilosCSS, como podemos ver, también conflicto, por lo que el usuario1 lo resolverá manualmente de nuevo.
+Ahora mergeará la rama estilosCSS, como podemos ver, también hay conflicto, por lo que el usuario1 lo resolverá manualmente de nuevo y posteriormente realizará el commit y push al repositorio.
 
 ![19](https://user-images.githubusercontent.com/79716922/135763801-dd054b0e-eb05-4ed9-a584-097062c1df1e.png)
 
+Una vez mergeado todas las features, creará un tag "v1.0" y lo subirá al repositorio.
 
+![20](https://user-images.githubusercontent.com/79716922/135763802-23f104a9-3604-4d9b-ad6d-aaf7ae116143.png)
+
+Ahora creará una rama de testing para que los testers de la empresa prueben la aplicación.
+
+![21](https://user-images.githubusercontent.com/79716922/135763804-bf97ac03-839e-4938-a43e-03090b32f221.png)
+
+#### Automatización
+
+El usuario1 se encargará de realizar los hooks para automatizar algunas funciones. Primero creará el hook para que cada vez que se realize un cambio de rama, los paquetes se actualizarán automáticamente.
+
+![22](https://user-images.githubusercontent.com/79716922/135763805-7efa8701-5e40-4e20-b584-1943627b3424.png)
+
+Aqui podemos ver su funcionamiento.
+
+![comp_hook_checkout](https://user-images.githubusercontent.com/79716922/135763810-ef085524-d208-48b3-ae93-702422eb333a.png)
+
+Ahora creará el hook para la verificación de los commits.
+
+![23](https://user-images.githubusercontent.com/79716922/135763806-f6a1b8a6-c3a5-4894-bb52-39170dfc15fa.png)
+
+Aqui podemos ver el funcionamiento de este.
+
+![comp_hook_commit_msg](https://user-images.githubusercontent.com/79716922/135763811-c5b17394-5544-42f6-a5a4-5dfcb0c8215f.png)
+
+También comprobará que antes de que se realize un push verifique que ninguno de los fichero contenga caracteres extraños.
+
+![24](https://user-images.githubusercontent.com/79716922/135763807-ff782760-d8e2-4f28-b703-3124f6f4b461.png)
+
+Este es su funcionamiento.
+
+![comp_hook_pre_push](https://user-images.githubusercontent.com/79716922/135763813-61b16582-b38a-4601-9070-cb40d7e523ec.png)
+
+Y por último, se verificará el formato correcto de los ficheros .html antes de realizar un commit, utilizando un [eslinter](https://www.npmjs.com/package/eslint-plugin-html).
+
+![25](https://user-images.githubusercontent.com/79716922/135763808-d1d8bae9-6e49-43fa-9a43-2bf4a0582aaf.png)
+
+Este es su funcionamiento.
+
+![comp_hook_pre_commit](https://user-images.githubusercontent.com/79716922/135763812-83c72bc4-dc10-4f02-bfe4-69d180b6b1c8.png)
+
+Una vez solucionado los errorres, se realizará el último push.
+
+![solucion_eslinter](https://user-images.githubusercontent.com/79716922/135763815-67d90390-b887-47c4-ac4d-4fde4c1b766d.png)
+
+Todos los hooks realizados se encontrarán el la carpeta gitHooks/ para que todos los usuarios puedan acceder a ellos.
