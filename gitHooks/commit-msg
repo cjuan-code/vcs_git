@@ -1,0 +1,11 @@
+#!/bin/bash
+
+inp=$1
+start=`head -n1 ${inp}`
+part1="MOTIVO DEL COMMIT:"
+part2="IMPLEMENTACION:"
+
+if ! [[ ${start} == ${part1}*${part2}* ]]; then
+	echo "El mensaje del commit debe seguir el siguiente patron con estos puntos: MOTIVO DEL COMMIT: <text> IMPLEMENTACION: <text>"
+	exit 1
+fi
