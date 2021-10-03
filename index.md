@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Ejercicio de Sistemas de Control de Versiones
 
-You can use the [editor on GitHub](https://github.com/cjuan-code/vcs_git/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Para este ejercicio he decidido utilizar la metodología GitHub Flow, explicación:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<ul>
+  <li> Todo lo que se desplega en lo que se encuentra en la rama master (rama de producción)</li>
+  <li> Para añadir una característica nueva, se crea una rama con un nombre distintivo de la funcionalidad a implementar</li>
+  <li> Se realiza el commit en local y se hace un push con el mismo en el server </li>
+  <li> Una vez revisado el código, ya podemos mergear contra master </li>
+  <li> Una vez mergeado, debemos desplegar los cambios </li>
+</ul>
 
-### Markdown
+Como todo, tiene sus ventajas y desventajas
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Ventajas: 
+<ul>
+  <li> Se recomiendo para features de duración corta (diarias o incluso de horas) </li>
+  <li> Flujo ligero y recomendado si el proyecto requiere de una entrega de valor constante </li>
+</ul>
 
-```markdown
-Syntax highlighted code block
+Desventajas: 
+<ul>
+  <li> Inestabilidad de master si no se utilizan las herramientas de testing/PR correctamente. </li>
+  <li> No recomendado para múltiples entornos productivos. </li>
+  <li> Dependiendo del producto, podemos tener restricciones de despliegues. </li>
+</ul>
 
-# Header 1
-## Header 2
-### Header 3
+Primero haremos las clonaciones para la simulación del trabajo en equipo.
+![1](https://user-images.githubusercontent.com/79716922/135763361-f8058d8a-2634-422d-871a-1ca6a6e3d471.png)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cjuan-code/vcs_git/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
